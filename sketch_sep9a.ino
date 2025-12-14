@@ -177,7 +177,7 @@ void loop() {
         // Rotary Encoder
         u8g.setFont(u8g_font_7x14);    
         u8g.drawStr(10, 15, "Alarm");
-        dtostrf(temperature, 1, 1, buffer);
+        dtostrf(temperature_threshold, 1, 1, buffer);
         sprintf(buffer, "%s%s", buffer, " C");
         u8g.drawStr(10, 35, buffer);
         
